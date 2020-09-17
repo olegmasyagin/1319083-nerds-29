@@ -46,6 +46,9 @@
   --special-gray: #A6A6A6;
   --special-more-gray: #666666;
   --special-dark-gray: #4D4D4D;
+  --special-page-button-lightgray: #DFDFDF;
+  --special-page-button-more-gray: #D5D5D5;
+  --special-page-button-opacity: rgba(0, 0, 0, 0.0001);
 
   --special-more-green: #00BC6C;
   --special-dark-green: #00AA62;
@@ -92,11 +95,13 @@ body {
 /* Header */
 .page-header {
   background-color: var(--basic-lightgray); 
+
 }
 
 .page-header-logo img {
   background-color: var(--basic-gray);
 }
+
 
 /* Navigation */
 
@@ -382,5 +387,98 @@ background-color: var(--basic-map-gray);
   font-size: 45px;
   line-height: 53px;
   font-weight: bold;
+}
+
+/* Catalog page*/
+
+.wrapper h1 {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+}
+
+.title-block {
+  background-color: var(--basic-lightgray);
+}
+
+/* Sorting products */
+
+.filter-products {
+  background-color: var(--basic-white);
+}
+
+.sorting-products {
+  background-color: var(--basic-white);
+}
+
+.sorting-products p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.list-sorting-products,
+.list-sorting-arrows,
+.list-view-products,
+.list-page-button {
+  list-style: none;
+}
+
+.list-sorting-products a,
+.list-sorting-arrows a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.list-sorting-products a:hover,
+.list-sorting-arrows a:hover {
+  opacity: 0.6;
+}
+
+.list-sorting-products a:active,
+.list-sorting-arrows a:active {
+  opacity: 1.0;
+}
+
+.list-sorting-products .here:link {
+  opacity: 1.0;
+}
+
+.list-products-section {
+  background-color: var(--basic-white);
+}
+
+.list-view-products img {
+  background-color: var(--basic-gray);
+}
+
+.list-page-button .button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-lightgray);
+  border:none;
+}
+
+.list-page-button .button:hover {
+ background-color: var(--special-page-button-lightgray);
+}
+
+.list-page-button .button:active {
+  background-color: var(--special-page-button-more-gray);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.list-page-button .button.here:link {
+  background-color: rgba(0, 0, 0, 0.0001);
 }
 
