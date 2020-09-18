@@ -76,7 +76,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-black);
-  background-color: var(--basic-gray);
+  background-color: var(--basic-white);
 }
 
 .page a {
@@ -99,7 +99,11 @@ body {
 }
 
 .page-header-logo img {
-  background-color: var(--basic-gray);
+  background-color: transparent;
+}
+
+.page-header-logo:active img {
+opacity: 0.3;
 }
 
 
@@ -172,7 +176,6 @@ body {
 
 /* Features */
 .features {
-  background-color: var(--basic-white);
   text-align: left;
 }
 
@@ -242,7 +245,6 @@ body {
 }
 
 .about-us {
-  background-color: var(--basic-white);
   text-align: left;
 }
 
@@ -287,16 +289,11 @@ body {
 
 /* Partner */
 
-.partners {
-  background-color: var(--basic-white);
-}
-
 .partner-logo-list {
   list-style: none;
 }
 
 .logo-list-item img {
-  background-color: var(--basic-gray);
   opacity: 0.2;  
 }
 
@@ -347,9 +344,6 @@ background-color: var(--basic-map-gray);
 
 /* Social-link */
 
-.footer-social-link {
-  background-color: var(--basic-white);
-}
 
 .social-link-list {
   list-style: none;
