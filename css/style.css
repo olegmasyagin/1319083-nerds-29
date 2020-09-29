@@ -374,13 +374,29 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content;
   align-items: center;
   border-top: 2px solid var(--basic-lightgray);
   border-bottom: 2px solid var(--basic-lightgray);
 }
+
+.partner-logo-list li:first-child {
+  margin-left: 32px;
+}
+
+.partner-logo-list li:nth-child(2) {
+  margin-left: 94px;
+}
+
+.partner-logo-list li:nth-child(3) {
+  margin-left: 104px;
+}
  
+.partner-logo-list li:last-child {
+ margin-left: 120px;
+}
+
 .logo-list-item img {
   opacity: 0.2;
 }
