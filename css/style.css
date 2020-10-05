@@ -53,10 +53,12 @@
   --special-page-button-opacity: rgba(0, 0, 0, 0.0001);
   --special-page-button-shadow: #DBDBDB;
   --special-inset-box-shadow: rgba(0, 1, 1, 0.1);
+  --special-outline-box-shadow: rgba(0, 1, 1, 0.25);
   --special-active-font-color: rgba(0, 0, 0, 0.3);
   --special-slider-inset-shadow: #C1C1C1;
   --special-current-button-background: rgba(0, 0, 0, 0.0001);
   --special-social-link-background:  #E1E1E1;
+  
 
   --special-more-green: #00BC6C;
   --special-dark-green: #00AA62;
@@ -953,8 +955,9 @@ body {
   height: 618px;
   width: 358px;
   border: 1px solid var(--basic-border);
-  border-radius: 3px;
+  border-radius: 5px;
   position: relative;
+  overflow: hidden;
 }
 
 .list-view-products li:nth-last-child(-n+2) {
@@ -970,6 +973,10 @@ body {
   border-top-right-radius: 3px;
   fill: var(--basic-gray);
   opacity: 0.12;
+}
+
+.view-products-item:hover {
+  box-shadow: 0px 6px 15px var(--special-outline-box-shadow);
 }
 
 .view-products-item:hover .path {
