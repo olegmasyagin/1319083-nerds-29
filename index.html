@@ -39,13 +39,13 @@
 
   <main class="main-wrapper">
 
-    <h1 class="hidden">Дизайн-студия Hёрдс</h1>
+    <h1 class="visually-hidden">Дизайн-студия Hёрдс</h1>
 
     <div class="advantages-container">
 
       <section class="advantages-slider container">
 
-        <h2 class="hidden">Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
 
         <ul class="slider-list">
 
@@ -79,7 +79,7 @@
 
     <section class="features container">
 
-      <h2 class="hidden">Особенности</h2>
+      <h2 class="visually-hidden">Особенности</h2>
 
       <ul class="features-list">
         <li class="features-list-item">
@@ -103,7 +103,7 @@
 
     <section class="about-us container">
 
-      <h2 class="hidden">О нас</h2>
+      <h2 class="visually-hidden">О нас</h2>
 
       <div class="about-us-left-column">
         <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
@@ -138,7 +138,7 @@
 
     <section class="partners container">
 
-      <h2 class="hidden">Логотипы сайтов</h2>
+      <h2 class="visually-hidden">Логотипы сайтов</h2>
 
       <ul class="partner-logo-list">
         <li class="logo-list-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img class="nohover"
@@ -160,7 +160,7 @@
   <footer class="page-footer">
 
     <section class="footer-write-us">
-      <h2 class="hidden">Как нас найти?</h2>
+      <h2 class="visually-hidden">Как нас найти?</h2>
 
       <div class="contacts-container">
         <div class="contacts">
@@ -176,15 +176,12 @@
 
     <section class="footer-social-link container">
 
-      <h2 class="hidden">Ссылки на социальные сети</h2>
+      <h2 class="visually-hidden">Ссылки на социальные сети</h2>
 
       <ul class="social-link-list">
         <li class="link-list-item"><a class="button" href=""></a></li>
-        <!--Здесь вместо текста будет  иконка vk-->
         <li class="link-list-item"><a class="button" href=""></a></li>
-        <!--Здесь вместо текста будет иконка facebook-->
         <li class="link-list-item"><a class="button" href=""></a></li>
-        <!--Здесь вместо текста будет иконка instagram-->
       </ul>
 
       <div class="footer-social-text">
@@ -196,12 +193,30 @@
 
   </footer>
 
-  <section class="modal-contact">
-    <h2 class="hidden">Форма обратной связи</h2>
-    <p>Напишите нам</p>
-    <!--Здесь будет форма-->
-    <button class="button modal-button-close">X</button>
-    <button class="button modal-button">Отправить</button>
+  <section class="modal modal-contact">
+    
+    <h2 class="visually-hidden">Окно обратной связи</h2>
+    
+    <p class="modal-description">Напишите нам</p>
+    <form class="contact-form" name="contact" action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+        <label for="user-name-field">Ваше имя:</label><br>
+        <input type="text" name="name" id="user-name-field" placeholder="Имя Фамилия">
+        </p>
+        <p>
+        <label for="user-email">Ваш email:</label><br>
+        <input type="email" name="email" id="user-email" placeholder="email@example.com">
+        </p>
+        <p>
+        <label for="user-message">Текст письма:</label><br>
+        <textarea name="message" id="user-message" placeholder="В свободной форме"></textarea>
+        </p>
+      <button class="button modal-button">Отправить</button>
+    </form>
+    
+    <button class="button modal-close" type="button"> 
+    </button>
+
   </section>
 
 </body>
