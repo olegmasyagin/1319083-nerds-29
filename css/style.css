@@ -218,6 +218,10 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.page-active {
+  border-bottom: 2px solid var(--basic-red);
+}
+
 .advantages-slider {
   position: relative;
 }
