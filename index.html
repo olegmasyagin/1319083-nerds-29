@@ -69,8 +69,8 @@
 
         <div class="slider-control">
           <button class="current" type="button" aria-label="Первый слайд"></button>
-          <button type="button" type="button" aria-label="Второй слайд"></button>
-          <button type="button" type="button"  aria-label="Третий слайд"></button>
+          <button type="button" aria-label="Второй слайд"></button>
+          <button type="button" aria-label="Третий слайд"></button>
         </div>
 
       </section>
@@ -201,11 +201,11 @@
     <form class="contact-form" name="contact" action="https://echo.htmlacademy.ru" method="POST">
         <p>
         <label for="user-name-field">Ваше имя:</label><br>
-        <input type="text" name="name" id="user-name-field" placeholder="Имя Фамилия">
+        <input type="text" name="name" id="user-name-field" pattern="^[А-Яа-яЁё\s]+$" placeholder="Имя Фамилия">
         </p>
         <p>
         <label for="user-email">Ваш email:</label><br>
-        <input type="email" name="email" id="user-email" placeholder="email@example.com">
+        <input type="email" name="email" id="user-email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="email@example.com">
         </p>
         <p>
         <label for="user-message">Текст письма:</label><br>
