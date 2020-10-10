@@ -67,10 +67,10 @@
 
               <div class="price-controls">
                 <label class="min-price">
-                  от <input type="number" name="min-price" value="0">
+                  от <input type="text" name="min-price" value="0">
                 </label>
                 <label class="max-price">
-                  до <input type="number" name="max-price" value="15000">
+                  до <input type="text" name="max-price" value="15 000">
                 </label>
               </div>
 
@@ -126,7 +126,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="button">Показать</button>
+          <button class="button">Показать</button>
         </form>
 
       </section>
@@ -145,8 +145,8 @@
             <li><a href="">По названию</a></li>
           </ul>
           <ul class="list-sorting-arrows">
-            <li><a class="arrow-down" href=""></a></li>
-            <li><a class="arrow-up" href=""></a></li>
+            <li><a class="arrow-down" href="" aria-label="По уменьшению цены"></a></li>
+            <li><a class="arrow-up" href="" aria-label="По возрастанию цены"></a></li>
           </ul>
 
         </section>
@@ -157,7 +157,7 @@
 
           <ul class="list-view-products">
 
-            <li class="view-products-item">
+            <li class="view-products-item" tabindex="0">
               <svg class="path">
                 <rect width="100%" height="100%" />
               </svg>
@@ -167,14 +167,14 @@
                 <circle r="7" cx="62" cy="13" />
               </svg>
               <div class="price">
-                <a href="">Sedona</a>
+                <a href="blank.html" aria-label="Переход к описанию товара" >Sedona</a>
                 <p>Информационный сайт<br> для туристов</p>
-                <button class="button">9 900 <span>&#8381;</span></button>
+                <button class="button" type="button" aria-label="Добавить в корзину сайт Sedona">9 900 <span>&#8381;</span></button>
               </div>
-              <img src="img/img-sedona-1.jpg" width="358" height="576" alt="Миниатюра страницы SEDONA">
+              <img src="img/img-sedona-1.jpg" width="358" height="576" alt="Миниатюра главной страницы сайта SEDONA">
             </li>
 
-            <li class="view-products-item">
+            <li class="view-products-item" tabindex="0">
               <svg class="path">
                 <rect width="100%" height="100%" />
               </svg>
@@ -184,14 +184,14 @@
                 <circle r="7" cx="62" cy="13" />
               </svg>
               <div class="price">
-                <a href="">Pink APP</a>
+                <a href="blank.html" aria-label="Переход к описанию товара">Pink APP</a>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <button class="button">9 900 <span>&#8381;</span></button>
+                <button class="button" type="button" aria-label="Добавить в корзину сайт PINK APP">9 900 <span>&#8381;</span></button>
               </div>
-              <img src="img/img-pink-1.jpg" width="359" height="578" alt="Миниатюра страницы PINK">
+              <img src="img/img-pink-1.jpg" width="359" height="578" alt="Миниатюра главной страницы сайта PINK">
             </li>
 
-            <li class="view-products-item">
+            <li class="view-products-item" tabindex="0">
               <svg class="path">
                 <rect width="100%" height="100%" />
               </svg>
@@ -201,14 +201,14 @@
                 <circle r="7" cx="62" cy="13" />
               </svg>
               <div class="price">
-                <a href="">Barbershop</a>
+                <a href="blank.html" aria-label="Переход к описанию товара">Barbershop</a>
                 <p>Сайт салона красоты.<br>Для мужчин, да.</p>
-                <button class="button">9 900 <span>&#8381;</span></button>
+                <button class="button" type="button" aria-label="Добавить в корзину сайт Barbershop">9 900 <span>&#8381;</span></button>
               </div>
-              <img src="img/img-barbershop-1.jpg" width="358" height="578" alt="Миниатюра страницы Barbershop">
+              <img src="img/img-barbershop-1.jpg" width="358" height="578" alt="Миниатюра главной страницы сайта Barbershop">
             </li>
 
-            <li class="view-products-item">
+            <li class="view-products-item" tabindex="0">
               <svg class="path">
                 <rect width="100%" height="100%" />
               </svg>
@@ -218,14 +218,14 @@
                 <circle r="7" cx="62" cy="13" />
               </svg>
               <div class="price">
-                <a href="">Mishka</a>
+                <a href="blank.html" aria-label="Переход к описанию товара">Mishka</a>
                 <p>Интернет-магазин<br>вязаных игрушек</p>
-                <button class="button">9 900 <span>&#8381;</span></button>
+                <button class="button" type="button" aria-label="Добавить в корзину сайт Mishka">9 900 <span>&#8381;</span></button>
               </div>
-              <img src="img/img-mishka-1.jpg" width="359" height="578" alt="Миниатюра страницы MISHKA">
+              <img src="img/img-mishka-1.jpg" width="359" height="578" alt="Миниатюра главной страницы сайта MISHKA">
             </li>
 
-            <li class="view-products-item">
+            <li class="view-products-item" tabindex="0">
               <svg class="path">
                 <rect width="100%" height="100%" />
               </svg>
@@ -235,14 +235,14 @@
                 <circle r="7" cx="62" cy="13" />
               </svg>
               <div class="price">
-                <a href="">A plus</a>
+                <a href="blank.html" aria-label="Переход к описанию товара">A plus</a>
                 <p>Лендинг курсов повышения квалификации</p>
-                <button class="button">9 900 <span>&#8381;</span></button>
+                <button class="button" type="button" aria-label="Добавить в корзину сайт A plus">9 900 <span>&#8381;</span></button>
               </div>
-              <img src="img/img-aplus-1.jpg" width="359" height="578" alt="Миниатюра страницы Aplus">
+              <img src="img/img-aplus-1.jpg" width="359" height="578" alt="Миниатюра главной страницы сайта A plus">
             </li>
 
-            <li class="view-products-item">
+            <li class="view-products-item" tabindex="0">
               <svg class="path">
                 <rect width="100%" height="100%" />
               </svg>
@@ -252,11 +252,11 @@
                 <circle r="7" cx="62" cy="13" />
               </svg>
               <div class="price">
-                <a href="">Кваст</a>
+                <a href="blank.html" aria-label="Переход к описанию товара">Кваст</a>
                 <p>Промо-сайт производителя крафтового пива</p>
-                <button class="button">9 900 <span>&#8381;</span></button>
+                <button class="button" type="button" aria-label="Добавить в корзину сайт Кваст">9 900 <span>&#8381;</span></button>
               </div>
-              <img src="img/img-kvast-1.jpg" width="359" height="578" alt="Миниатюра страницы KVAST">
+              <img src="img/img-kvast-1.jpg" width="359" height="578" alt="Миниатюра главной страницы сайта KVAST">
             </li>
 
 

@@ -48,13 +48,22 @@
   --special-gray: #A6A6A6;
   --special-more-gray: #666666;
   --special-dark-gray: #4D4D4D;
+
+ --special-more-green: #00BC6C;
+  --special-dark-green: #00AA62;
+
+  --special-more-yellow: #EAB534;
+  --special-dark-yellow: #E5A722;
   --special-page-button-lightgray: #DFDFDF;
   --special-page-button-more-gray: #D5D5D5;
   --special-page-button-opacity: rgba(0, 0, 0, 0.0001);
   --special-page-button-shadow: #DBDBDB;
+
   --special-inset-box-shadow: rgba(0, 1, 1, 0.1);
   --special-outline-box-shadow: rgba(0, 1, 1, 0.25);
+
   --special-active-font-color: rgba(0, 0, 0, 0.3);
+
   --special-slider-inset-shadow: #C1C1C1;
   --special-current-button-background: rgba(0, 0, 0, 0.0001);
   --special-social-link-background: #E1E1E1;
@@ -62,12 +71,7 @@
   --special-form-border: #D7DCDE;
   --special-toggle-shadow: rgba(0, 0, 0, 0.15);
   --special-form-letter: #283136;
-  --special-more-green: #00BC6C;
-  --special-dark-green: #00AA62;
-
-  --special-more-yellow: #EAB534;
-  --special-dark-yellow: #E5A722;
-
+ 
   --special-opacity-white: rgba(255, 255, 255, 0.3);
 
 
@@ -269,13 +273,16 @@ input[type="radio"].visually-hidden {
 .slider-list-item .button {
   font: inherit;
   display: inline-block;
+  vertical-align: middle;
   font-size: 16px;
   line-height: 18px;
+  width: 240px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-red);
   border: none;
-  padding: 17px 55px 15px 55px;
+  padding: 17px 0 15px;
   border-radius: 3px;
   margin-bottom: 80px;
 }
@@ -1020,8 +1027,8 @@ input[type="radio"].visually-hidden {
   font-size: inherit;
   width: 60px;
   text-align: center;
-  margin-left: 9px;
-  padding: 10px 0 10px 18px;
+  margin-left: 8px;
+  padding: 10px;
   color: var(--special-form-letter);
   border: none;
   border-radius: 5px;
@@ -1178,8 +1185,6 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0px 3px 0px var(--special-inset-box-shadow);
 }
 
-
-
 /* Sorting block */
 
 .sorting-products {
@@ -1225,6 +1230,8 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: flex-end;
 }
 
 .list-view-products li:nth-last-child(-n+2) {
@@ -1242,11 +1249,13 @@ input[type="radio"].visually-hidden {
   opacity: 0.12;
 }
 
-.view-products-item:hover {
+.view-products-item:hover,
+.view-products-item:focus {
   box-shadow: 0px 6px 15px var(--special-outline-box-shadow);
 }
 
-.view-products-item:hover .path {
+.view-products-item:hover .path,
+.view-products-item:focus .path {
   opacity: 1;
 }
 
@@ -1260,14 +1269,11 @@ input[type="radio"].visually-hidden {
 }
 
 .view-products-item .price {
-  position: relative;
   width: 360px;
-  height: 231px;
-  right: 1px;
+  min-height: 231px;
   align-items: center;
-  margin-top: 387px;
   background-color: var(--basic-lightgray);
-  z-index: 3;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1279,13 +1285,15 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 26px;
-  margin-bottom: 14px;
+  margin-top: 27px;
+  margin-bottom: 13px;
   color: var(--basic-black);
 }
 
-.price a:hover {
+.price a:hover,
+.price a:focus {
   color: var(--basic-red);
+
 }
 
 .price a:active {
@@ -1297,11 +1305,14 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   width: 255px;
+  min-height: 37px;
+  max-height: 384px;
   font-size: 16px;
   line-height: 18px;
   color: var(--special-more-gray);
   margin-bottom: 32px;
   text-align: center;
+  overflow: auto;
 }
 
 .price .button {
@@ -1309,7 +1320,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  font-size: 500;
+  font-weight: 500;
   padding: 17px 72px 15px 72px;
   border: none;
   outline: none;
@@ -1317,9 +1328,11 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-red);
   color: var(--basic-white);
   cursor: pointer;
+  margin-bottom: 43px;
 }
 
-.price .button:hover {
+.price .button:hover,
+.price .button:focus {
   background-color: var(--special-more-red);
 }
 
@@ -1333,12 +1346,16 @@ input[type="radio"].visually-hidden {
   width: 358px;
   height: 578px;
   top: 40px;
-  z-index: 4;
+  z-index: 2;
 }
 
-.view-products-item:hover img {
-  z-index: 1;
+.view-products-item:hover .price,
+.view-products-item:focus .price,
+.price:focus-within {
+  z-index: 3;
 }
+
+
 
 .arrow-down,
 .arrow-up {
