@@ -137,6 +137,9 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-lightgray);
 }
 
+ .page-header-logo {
+   margin-bottom: 2px;
+ }
 .page-header-logo:active img {
   opacity: 0.3;
 }
@@ -251,7 +254,7 @@ input[type="radio"].visually-hidden {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
-  margin: 68px 0 27px;
+  margin: 66px 0 27px;
 }
 
 .slider-list {
@@ -334,7 +337,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 760px;
   height: 431px;
-  top: -11px;
+  top: -13px;
   left: 397px;
   background-image: url("../img/nerds-index-slide1-1.png");
   background-repeat: no-repeat;
@@ -346,7 +349,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 760px;
   height: 431px;
-  top: -11px;
+  top: -13px;
   left: 397px;
   background-image: url("../img/nerds-index-slide2-1.png");
   background-repeat: no-repeat;
@@ -358,7 +361,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 760px;
   height: 431px;
-  top: -11px;
+  top: -13px;
   left: 397px;
   background-image: url("../img/nerds-index-slide3-1.png");
   background-repeat: no-repeat;
@@ -1483,6 +1486,11 @@ input[type="radio"].visually-hidden {
   margin: auto;
   width: 960px;
   box-shadow: 0px 20px 40px var(--special-modal-shadow);
+  display: none;
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal-contact {
@@ -1492,7 +1500,6 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-white);
   margin-bottom: auto;
   z-index: 50;
-  display: none;
 }
 
 .contact-form {

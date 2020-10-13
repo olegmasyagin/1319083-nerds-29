@@ -167,9 +167,10 @@
                 <circle r="7" cx="62" cy="13" />
               </svg>
               <div class="price">
-                <a href="blank.html" aria-label="Переход к описанию товара" >Sedona</a>
+                <a href="blank.html" aria-label="Переход к описанию товара">Sedona</a>
                 <p>Информационный сайт<br> для туристов</p>
-                <button class="button" type="button" aria-label="Добавить в корзину сайт Sedona">9 900 <span>&#8381;</span></button>
+                <button class="button" type="button" aria-label="Добавить в корзину сайт Sedona">9 900
+                  <span>&#8381;</span></button>
               </div>
               <img src="img/img-sedona-1.jpg" width="358" height="576" alt="Миниатюра главной страницы сайта SEDONA">
             </li>
@@ -186,7 +187,8 @@
               <div class="price">
                 <a href="blank.html" aria-label="Переход к описанию товара">Pink APP</a>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <button class="button" type="button" aria-label="Добавить в корзину сайт PINK APP">9 900 <span>&#8381;</span></button>
+                <button class="button" type="button" aria-label="Добавить в корзину сайт PINK APP">9 900
+                  <span>&#8381;</span></button>
               </div>
               <img src="img/img-pink-1.jpg" width="359" height="578" alt="Миниатюра главной страницы сайта PINK">
             </li>
@@ -203,9 +205,11 @@
               <div class="price">
                 <a href="blank.html" aria-label="Переход к описанию товара">Barbershop</a>
                 <p>Сайт салона красоты.<br>Для мужчин, да.</p>
-                <button class="button" type="button" aria-label="Добавить в корзину сайт Barbershop">9 900 <span>&#8381;</span></button>
+                <button class="button" type="button" aria-label="Добавить в корзину сайт Barbershop">9 900
+                  <span>&#8381;</span></button>
               </div>
-              <img src="img/img-barbershop-1.jpg" width="358" height="578" alt="Миниатюра главной страницы сайта Barbershop">
+              <img src="img/img-barbershop-1.jpg" width="358" height="578"
+                alt="Миниатюра главной страницы сайта Barbershop">
             </li>
 
             <li class="view-products-item" tabindex="0">
@@ -220,7 +224,8 @@
               <div class="price">
                 <a href="blank.html" aria-label="Переход к описанию товара">Mishka</a>
                 <p>Интернет-магазин<br>вязаных игрушек</p>
-                <button class="button" type="button" aria-label="Добавить в корзину сайт Mishka">9 900 <span>&#8381;</span></button>
+                <button class="button" type="button" aria-label="Добавить в корзину сайт Mishka">9 900
+                  <span>&#8381;</span></button>
               </div>
               <img src="img/img-mishka-1.jpg" width="359" height="578" alt="Миниатюра главной страницы сайта MISHKA">
             </li>
@@ -237,7 +242,8 @@
               <div class="price">
                 <a href="blank.html" aria-label="Переход к описанию товара">A plus</a>
                 <p>Лендинг курсов повышения квалификации</p>
-                <button class="button" type="button" aria-label="Добавить в корзину сайт A plus">9 900 <span>&#8381;</span></button>
+                <button class="button" type="button" aria-label="Добавить в корзину сайт A plus">9 900
+                  <span>&#8381;</span></button>
               </div>
               <img src="img/img-aplus-1.jpg" width="359" height="578" alt="Миниатюра главной страницы сайта A plus">
             </li>
@@ -254,7 +260,8 @@
               <div class="price">
                 <a href="blank.html" aria-label="Переход к описанию товара">Кваст</a>
                 <p>Промо-сайт производителя крафтового пива</p>
-                <button class="button" type="button" aria-label="Добавить в корзину сайт Кваст">9 900 <span>&#8381;</span></button>
+                <button class="button" type="button" aria-label="Добавить в корзину сайт Кваст">9 900
+                  <span>&#8381;</span></button>
               </div>
               <img src="img/img-kvast-1.jpg" width="359" height="578" alt="Миниатюра главной страницы сайта KVAST">
             </li>
@@ -288,7 +295,7 @@
           <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
           <p><a class="telephone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-          <a class="button" href="">Напишите нам</a>
+          <a class="button open-modal-button" href="">Напишите нам</a>
         </div>
       </div>
 
@@ -311,8 +318,33 @@
 
     </section>
 
-  </footer>
+    <section class="modal modal-contact">
 
+      <h2 class="visually-hidden">Окно обратной связи</h2>
+
+      <p class="modal-description">Напишите нам</p>
+      <form class="contact-form" name="contact" action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="user-name-field">Ваше имя:</label><br>
+          <input type="text" name="name" id="user-name-field" pattern="^[А-Яа-яЁё\s]+$" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-email">Ваш email:</label><br>
+          <input type="email" name="email" id="user-email"
+            pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+            placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-message">Текст письма:</label><br>
+          <textarea name="message" id="user-message" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button modal-button">Отправить</button>
+      </form>
+
+      <button class="button modal-close" type="button" aria-label="Закрыть окно">
+      </button>
+
+      <script src="js/script.js"></script>
 </body>
 
 </html>
