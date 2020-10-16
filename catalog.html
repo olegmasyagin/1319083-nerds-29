@@ -5,55 +5,39 @@
   <meta charset="utf-8">
   <title>Дизайн-студия Нёрдс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
-
   <header class="page-header">
-
     <div class="page-navigation-container">
-
       <nav class="page-navigation">
-
         <a class="page-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип сайта">
         </a>
-
         <ul class="site-navigation">
           <li><a href="index.html">Студия</a></li>
           <li><a href="">Клиенты</a></li>
           <li><a class="page-active" href="catalog.html">Магазин</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-
         <div class="user-navigation">
           <a class="shopping-cart-link" href="">Корзина</a>
         </div>
-
       </nav>
-
     </div>
-
   </header>
-
   <main class="main-wrapper">
-
     <div class="title-block">
       <h1>Магазин готовых шаблонов</h1>
     </div>
-
     <div class="products container">
-
       <section class="filter-products">
-
         <h2 class="visually-hidden">Фильтр товаров</h2>
-
         <form class="filters" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-item">
             <legend>Стоимость:</legend>
             <div class="range-filter">
-
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar" style="width: 70%; left: 0">
@@ -64,7 +48,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="price-controls">
                 <label class="min-price">
                   от <input type="text" name="min-price" value="0">
@@ -73,7 +56,6 @@
                   до <input type="text" name="max-price" value="15 000">
                 </label>
               </div>
-
             </div>
           </fieldset>
           <fieldset class="filter">
@@ -128,17 +110,11 @@
           </fieldset>
           <button class="button">Показать</button>
         </form>
-
       </section>
-
       <div class="sorting-products-wrapper">
-
         <section class="sorting-products">
-
           <h2 class="visually-hidden">Сортировка</h2>
-
           <p>Сортировать:</p>
-
           <ul class="list-sorting-products">
             <li><a class="here" href="">По цене</a></li>
             <li><a href="">По типу </a></li>
@@ -148,15 +124,10 @@
             <li><a class="arrow-down" href="" aria-label="По уменьшению цены"></a></li>
             <li><a class="arrow-up" href="" aria-label="По возрастанию цены"></a></li>
           </ul>
-
         </section>
-
         <section class="list-products">
-
           <h2 class="visually-hidden">Список товаров</h2>
-
           <ul class="list-view-products">
-
             <li class="view-products-item" tabindex="0">
               <svg class="path">
                 <rect width="100%" height="100%" />
@@ -167,14 +138,13 @@
                 <circle r="7" cx="62" cy="13" />
               </svg>
               <div class="price">
-                <a href="blank.html" aria-label="Переход к описанию товара">Sedona</a>
+                <a href="productcard.html" class="modal-link" aria-label="Переход к описанию товара">Sedona</a>
                 <p>Информационный сайт<br> для туристов</p>
-                <button class="button" type="button" aria-label="Добавить в корзину сайт Sedona">9 900
+                <button type="button" aria-label="Добавить в корзину сайт Sedona">9 900
                   <span>&#8381;</span></button>
               </div>
               <img src="img/img-sedona-1.jpg" width="358" height="576" alt="Миниатюра главной страницы сайта SEDONA">
             </li>
-
             <li class="view-products-item" tabindex="0">
               <svg class="path">
                 <rect width="100%" height="100%" />
@@ -185,14 +155,13 @@
                 <circle r="7" cx="62" cy="13" />
               </svg>
               <div class="price">
-                <a href="blank.html" aria-label="Переход к описанию товара">Pink APP</a>
+                <a href="productcard.html" class="modal-link" aria-label="Переход к описанию товара">Pink APP</a>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <button class="button" type="button" aria-label="Добавить в корзину сайт PINK APP">9 900
+                <button type="button" aria-label="Добавить в корзину сайт PINK APP">9 900
                   <span>&#8381;</span></button>
               </div>
               <img src="img/img-pink-1.jpg" width="359" height="578" alt="Миниатюра главной страницы сайта PINK">
             </li>
-
             <li class="view-products-item" tabindex="0">
               <svg class="path">
                 <rect width="100%" height="100%" />
@@ -203,15 +172,14 @@
                 <circle r="7" cx="62" cy="13" />
               </svg>
               <div class="price">
-                <a href="blank.html" aria-label="Переход к описанию товара">Barbershop</a>
+                <a href="productcard.html" class="modal-link" aria-label="Переход к описанию товара">Barbershop</a>
                 <p>Сайт салона красоты.<br>Для мужчин, да.</p>
-                <button class="button" type="button" aria-label="Добавить в корзину сайт Barbershop">9 900
+                <button type="button" aria-label="Добавить в корзину сайт Barbershop">9 900
                   <span>&#8381;</span></button>
               </div>
               <img src="img/img-barbershop-1.jpg" width="358" height="578"
                 alt="Миниатюра главной страницы сайта Barbershop">
             </li>
-
             <li class="view-products-item" tabindex="0">
               <svg class="path">
                 <rect width="100%" height="100%" />
@@ -222,14 +190,13 @@
                 <circle r="7" cx="62" cy="13" />
               </svg>
               <div class="price">
-                <a href="blank.html" aria-label="Переход к описанию товара">Mishka</a>
+                <a href="productcard.html" class="modal-link" aria-label="Переход к описанию товара">Mishka</a>
                 <p>Интернет-магазин<br>вязаных игрушек</p>
-                <button class="button" type="button" aria-label="Добавить в корзину сайт Mishka">9 900
+                <button type="button" aria-label="Добавить в корзину сайт Mishka">9 900
                   <span>&#8381;</span></button>
               </div>
               <img src="img/img-mishka-1.jpg" width="359" height="578" alt="Миниатюра главной страницы сайта MISHKA">
             </li>
-
             <li class="view-products-item" tabindex="0">
               <svg class="path">
                 <rect width="100%" height="100%" />
@@ -240,14 +207,13 @@
                 <circle r="7" cx="62" cy="13" />
               </svg>
               <div class="price">
-                <a href="blank.html" aria-label="Переход к описанию товара">A plus</a>
+                <a href="productcard.html" class="modal-link" aria-label="Переход к описанию товара">A plus</a>
                 <p>Лендинг курсов повышения квалификации</p>
-                <button class="button" type="button" aria-label="Добавить в корзину сайт A plus">9 900
+                <button type="button" aria-label="Добавить в корзину сайт A plus">9 900
                   <span>&#8381;</span></button>
               </div>
               <img src="img/img-aplus-1.jpg" width="359" height="578" alt="Миниатюра главной страницы сайта A plus">
             </li>
-
             <li class="view-products-item" tabindex="0">
               <svg class="path">
                 <rect width="100%" height="100%" />
@@ -258,72 +224,52 @@
                 <circle r="7" cx="62" cy="13" />
               </svg>
               <div class="price">
-                <a href="blank.html" aria-label="Переход к описанию товара">Кваст</a>
+                <a href="product.card" class="modal-link" aria-label="Переход к описанию товара">Кваст</a>
                 <p>Промо-сайт производителя крафтового пива</p>
-                <button class="button" type="button" aria-label="Добавить в корзину сайт Кваст">9 900
+                <button type="button" aria-label="Добавить в корзину сайт Кваст">9 900
                   <span>&#8381;</span></button>
               </div>
               <img src="img/img-kvast-1.jpg" width="359" height="578" alt="Миниатюра главной страницы сайта KVAST">
             </li>
-
-
           </ul>
-
           <ul class="list-page-button">
-            <li class="page-button-item current-page"><a class="button" href="">1</a></li>
-            <li class="page-button-item"><a class="button" href="">2</a></li>
-            <li class="page-button-item"><a class="button" href="">3</a></li>
-            <li class="page-button-item"><a class="button" href="">Следующая</a></li>
+            <li class="page-button-item current-page"><a class="button" href="#">1</a></li>
+            <li class="page-button-item"><a class="button" href="#">2</a></li>
+            <li class="page-button-item"><a class="button" href="#">3</a></li>
+            <li class="page-button-item"><a class="button" href="#">Следующая</a></li>
           </ul>
-
         </section>
-
       </div>
-
     </div>
   </main>
-
   <footer class="page-footer">
-
     <section class="footer-write-us">
-
       <h2 class="visually-hidden">Как нас найти?</h2>
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602694358145!5m2!1sru!2sru" width="100%" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602862431737!5m2!1sru!2sru" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <div class="contacts-container">
         <div class="contacts">
           <p>NЁRDS DESIGN STUDIO</p>
           <p>191186, Санкт-Петербург,<br>
             ул. Б. Конюшенная, д. 19/8</p>
           <p><a class="telephone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-          <a class="button open-modal-button" href="">Напишите нам</a>
+          <a class="button open-modal-button" href="writeus.thml">Напишите нам</a>
         </div>
       </div>
-
     </section>
-
     <section class="footer-social-link container">
-
       <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-
       <ul class="social-link-list">
-        <li class="link-list-item"><a class="button" href=""></a></li>
-        <li class="link-list-item"><a class="button" href=""></a></li>
-        <li class="link-list-item"><a class="button" href=""></a></li>
+        <li class="link-list-item"><a class="button" href="#"></a></li>
+        <li class="link-list-item"><a class="button" href="#"></a></li>
+        <li class="link-list-item"><a class="button" href="#"></a></li>
       </ul>
-
       <div class="footer-social-text">
         <p>Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей</p>
       </div>
-
     </section>
-
     <section class="modal modal-contact">
-
       <h2 class="visually-hidden">Окно обратной связи</h2>
-
       <p class="modal-description">Напишите нам</p>
       <form class="contact-form" name="contact" action="https://echo.htmlacademy.ru" method="POST">
         <p>
@@ -342,11 +288,10 @@
         </p>
         <button class="button modal-button">Отправить</button>
       </form>
-
       <button class="button modal-close" type="button" aria-label="Закрыть окно">
       </button>
-
-      <script src="js/script.js"></script>
+    </section>
+      <script src="js/sript.min.js"></script>
+  </footer>    
 </body>
-
 </html>
