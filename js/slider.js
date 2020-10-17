@@ -13,7 +13,7 @@ button1.addEventListener('click', function(evt) {
   button2.classList.remove('current');
   button3.classList.remove('current');
   slide1.classList.add('slide-current');
-  slide2.classList.remove('slides-current');
+  slide2.classList.remove('slide-current');
   slide3.classList.remove('slide-current');
 });
 
