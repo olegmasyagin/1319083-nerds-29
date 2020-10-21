@@ -1389,30 +1389,35 @@ input[type="radio"].visually-hidden {
   overflow: auto;
 }
 
-.price button {
+.price .price-button {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
   width: 200px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   font-weight: 500;
-  padding: 17px 72px 15px 72px;
   border: none;
   border-radius: 3px;
   background-color: var(--basic-red);
   color: var(--basic-white);
   cursor: pointer;
-  margin-bottom: 43px;
+  margin: 0 0 43px 0;
+  padding: 17px 0 15px;
 }
 
-.price button:hover,
-.price button:focus {
+.price .price-button:hover,
+.price .price-button:focus {
   background-color: var(--special-more-red);
+  color: var(--basic-white);
   outline: none;
 }
 
-.price button:active {
+.price .price-button:active {
   background-color: var(--special-dark-red);
   box-shadow: inset 0 3px 0 var(--special-inset-box-shadow);
+  opacity: 1;
 }
 
 .list-view-products img {
